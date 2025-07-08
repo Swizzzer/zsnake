@@ -202,7 +202,7 @@ pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
     defer _ = gpa.deinit();
     const allocator = gpa.allocator();
-    rl.initWindow(SCREEN_SIZE, SCREEN_SIZE, "znake");
+    rl.initWindow(SCREEN_SIZE, SCREEN_SIZE, "🐍🐍🐍");
     defer rl.closeWindow();
     var player = Snake{ .position = undefined, .direction = Direction.DOWN, .length = 3 };
     var game = Game{
